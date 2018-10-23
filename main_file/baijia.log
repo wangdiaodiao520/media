@@ -1,0 +1,385 @@
+2018-08-13 21:07:33 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: media_spider)
+2018-08-13 21:07:33 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 2.7.10 (default, Oct  6 2017, 22:29:07) - [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.2.1, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-08-13 21:07:33 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'media_spider.spiders', 'SPIDER_MODULES': ['media_spider.spiders'], 'DOWNLOAD_DELAY': '3', 'BOT_NAME': 'media_spider'}
+2018-08-13 21:07:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-08-13 21:07:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'media_spider.middlewares.MediaSpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-13 21:07:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-13 21:07:33 [scrapy.middleware] INFO: Enabled item pipelines:
+['media_spider.pipelines.MediaSpiderPipeline']
+2018-08-13 21:07:33 [scrapy.core.engine] INFO: Spider opened
+2018-08-13 21:07:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-13 21:07:33 [bai_jia_spider] INFO: Spider opened: bai_jia_spider
+2018-08-13 21:07:33 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-08-13 21:07:33 [root] INFO: spider account 13349936392 start
+2018-08-13 21:07:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:07:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:36 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/timeouts {"pageLoad": 2000}
+2018-08-13 21:07:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:36 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/url {"url": "http://baijiahao.baidu.com/builder/app/login"}
+2018-08-13 21:07:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:38 [root] INFO: time out===>login too fast
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/middlewares_manager/download_middlewares.py", line 99, in get_bai_jia_response
+    driver.get(request.url)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+TimeoutException: Message: Timeout loading page after 2000ms
+
+2018-08-13 21:07:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__footerULoginBtn\"]"}
+2018-08-13 21:07:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/element/aa4a6014-b5d4-0049-b921-fe3174e677a9/click {"id": "aa4a6014-b5d4-0049-b921-fe3174e677a9"}
+2018-08-13 21:07:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__userName\"]"}
+2018-08-13 21:07:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/element/267fc9e6-c632-8140-8b04-9232ac914971/value {"text": "13349936392", "id": "267fc9e6-c632-8140-8b04-9232ac914971", "value": ["1", "3", "3", "4", "9", "9", "3", "6", "3", "9", "2"]}
+2018-08-13 21:07:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__password\"]"}
+2018-08-13 21:07:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/element/5167f64d-bc69-ea4d-9c39-f86134f9b7d4/value {"text": "getfun666", "id": "5167f64d-bc69-ea4d-9c39-f86134f9b7d4", "value": ["g", "e", "t", "f", "u", "n", "6", "6", "6"]}
+2018-08-13 21:07:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__submit\"]"}
+2018-08-13 21:07:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:07:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/element/f4756c5e-548a-5942-9490-63b2c4c26c70/click {"id": "f4756c5e-548a-5942-9490-63b2c4c26c70"}
+2018-08-13 21:07:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:01 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/source {}
+2018-08-13 21:08:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:01 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/cookie {}
+2018-08-13 21:08:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:01 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce/url {}
+2018-08-13 21:08:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:01 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:56262/session/b6214d12-2a1b-9e44-a3f4-ffff953f8dce {}
+2018-08-13 21:08:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baijiahao.baidu.com/builder/app/login> (referer: None)
+2018-08-13 21:08:01 [root] INFO: spider account 13476071715 start
+2018-08-13 21:08:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:08:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/timeouts {"pageLoad": 2000}
+2018-08-13 21:08:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/url {"url": "http://baijiahao.baidu.com/builder/app/login"}
+2018-08-13 21:08:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:06 [root] INFO: time out===>login too fast
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/middlewares_manager/download_middlewares.py", line 99, in get_bai_jia_response
+    driver.get(request.url)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+TimeoutException: Message: Timeout loading page after 2000ms
+
+2018-08-13 21:08:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__footerULoginBtn\"]"}
+2018-08-13 21:08:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/element/d19be222-fb07-a04f-9899-c7de35f9edfe/click {"id": "d19be222-fb07-a04f-9899-c7de35f9edfe"}
+2018-08-13 21:08:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__userName\"]"}
+2018-08-13 21:08:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/element/5346d452-5679-cb42-a332-054db54ee8e1/value {"text": "13476071715", "id": "5346d452-5679-cb42-a332-054db54ee8e1", "value": ["1", "3", "4", "7", "6", "0", "7", "1", "7", "1", "5"]}
+2018-08-13 21:08:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:22 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__password\"]"}
+2018-08-13 21:08:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:22 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/element/8d84722a-afee-b245-99a1-848ef3885fb1/value {"text": "Getfun666", "id": "8d84722a-afee-b245-99a1-848ef3885fb1", "value": ["G", "e", "t", "f", "u", "n", "6", "6", "6"]}
+2018-08-13 21:08:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__submit\"]"}
+2018-08-13 21:08:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/element/e6d3c735-37bd-7d45-a1c3-8be26d7c9895/click {"id": "e6d3c735-37bd-7d45-a1c3-8be26d7c9895"}
+2018-08-13 21:08:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/source {}
+2018-08-13 21:08:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/cookie {}
+2018-08-13 21:08:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d/url {}
+2018-08-13 21:08:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:32 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:56393/session/99ba4326-2d2e-3c48-9591-7ddd811ff21d {}
+2018-08-13 21:08:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baijiahao.baidu.com/builder/app/login> (referer: None)
+2018-08-13 21:08:32 [root] INFO: spider account 13476202346 start
+2018-08-13 21:08:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:08:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/timeouts {"pageLoad": 2000}
+2018-08-13 21:08:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/url {"url": "http://baijiahao.baidu.com/builder/app/login"}
+2018-08-13 21:08:37 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:37 [root] INFO: time out===>login too fast
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/middlewares_manager/download_middlewares.py", line 99, in get_bai_jia_response
+    driver.get(request.url)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+TimeoutException: Message: Timeout loading page after 2000ms
+
+2018-08-13 21:08:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__footerULoginBtn\"]"}
+2018-08-13 21:08:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/element/52dcceaa-51db-6343-b8a6-6f31cb109599/click {"id": "52dcceaa-51db-6343-b8a6-6f31cb109599"}
+2018-08-13 21:08:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__userName\"]"}
+2018-08-13 21:08:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/element/c5ed71d8-9b8c-2143-befe-b8feb97ba57e/value {"text": "13476202346", "id": "c5ed71d8-9b8c-2143-befe-b8feb97ba57e", "value": ["1", "3", "4", "7", "6", "2", "0", "2", "3", "4", "6"]}
+2018-08-13 21:08:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__password\"]"}
+2018-08-13 21:08:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/element/e9d7ac1d-8e17-574a-8f19-3f7ea8a0c676/value {"text": "19961006...", "id": "e9d7ac1d-8e17-574a-8f19-3f7ea8a0c676", "value": ["1", "9", "9", "6", "1", "0", "0", "6", ".", ".", "."]}
+2018-08-13 21:08:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__submit\"]"}
+2018-08-13 21:08:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:08:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/element/e919dc04-f057-6e4c-a417-36f5737e4bf3/click {"id": "e919dc04-f057-6e4c-a417-36f5737e4bf3"}
+2018-08-13 21:08:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/source {}
+2018-08-13 21:09:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/cookie {}
+2018-08-13 21:09:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21/url {}
+2018-08-13 21:09:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:02 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:56502/session/d2dc1ba1-14ff-7c45-827d-f45fba851e21 {}
+2018-08-13 21:09:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baijiahao.baidu.com/builder/app/login> (referer: None)
+2018-08-13 21:09:02 [root] INFO: spider account ericisionyou start
+2018-08-13 21:09:02 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2018-08-13 21:09:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:09:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/timeouts {"pageLoad": 2000}
+2018-08-13 21:09:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/url {"url": "http://baijiahao.baidu.com/builder/app/login"}
+2018-08-13 21:09:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:07 [root] INFO: time out===>login too fast
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/middlewares_manager/download_middlewares.py", line 99, in get_bai_jia_response
+    driver.get(request.url)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+TimeoutException: Message: Timeout loading page after 2000ms
+
+2018-08-13 21:09:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__footerULoginBtn\"]"}
+2018-08-13 21:09:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/element/f8a9f895-3afe-d940-a20d-bfed513c81f6/click {"id": "f8a9f895-3afe-d940-a20d-bfed513c81f6"}
+2018-08-13 21:09:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__userName\"]"}
+2018-08-13 21:09:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/element/7e9a6e71-4b92-8e43-bee1-1802fd4b0397/value {"text": "ericisionyou", "id": "7e9a6e71-4b92-8e43-bee1-1802fd4b0397", "value": ["e", "r", "i", "c", "i", "s", "i", "o", "n", "y", "o", "u"]}
+2018-08-13 21:09:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__password\"]"}
+2018-08-13 21:09:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/element/15bd2a1e-1a1e-cb4a-9c09-eb70a03a7783/value {"text": "1haozhuanan", "id": "15bd2a1e-1a1e-cb4a-9c09-eb70a03a7783", "value": ["1", "h", "a", "o", "z", "h", "u", "a", "n", "a", "n"]}
+2018-08-13 21:09:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:25 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__submit\"]"}
+2018-08-13 21:09:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:25 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/element/b4061ba0-f5c5-2e41-9371-e843dc4e822c/click {"id": "b4061ba0-f5c5-2e41-9371-e843dc4e822c"}
+2018-08-13 21:09:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:31 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/source {}
+2018-08-13 21:09:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:31 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/cookie {}
+2018-08-13 21:09:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:31 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736/url {}
+2018-08-13 21:09:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:31 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:56612/session/84f3d5d0-f77f-2c4e-b999-b678338c6736 {}
+2018-08-13 21:09:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baijiahao.baidu.com/builder/app/login> (referer: None)
+2018-08-13 21:09:31 [root] INFO: spider account 17720214393 start
+2018-08-13 21:09:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:09:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/timeouts {"pageLoad": 2000}
+2018-08-13 21:09:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/url {"url": "http://baijiahao.baidu.com/builder/app/login"}
+2018-08-13 21:09:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:36 [root] INFO: time out===>login too fast
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/middlewares_manager/download_middlewares.py", line 99, in get_bai_jia_response
+    driver.get(request.url)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+TimeoutException: Message: Timeout loading page after 2000ms
+
+2018-08-13 21:09:46 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__footerULoginBtn\"]"}
+2018-08-13 21:09:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:46 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/element/c852ebf1-212b-e540-b6be-42fb55642460/click {"id": "c852ebf1-212b-e540-b6be-42fb55642460"}
+2018-08-13 21:09:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__userName\"]"}
+2018-08-13 21:09:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/element/933a5ce0-1423-c84b-9d91-dc6cf068e4c6/value {"text": "17720214393", "id": "933a5ce0-1423-c84b-9d91-dc6cf068e4c6", "value": ["1", "7", "7", "2", "0", "2", "1", "4", "3", "9", "3"]}
+2018-08-13 21:09:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__password\"]"}
+2018-08-13 21:09:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/element/662ae299-fe16-9e4e-9807-71e62cffcd9a/value {"text": "VSmodel2015***", "id": "662ae299-fe16-9e4e-9807-71e62cffcd9a", "value": ["V", "S", "m", "o", "d", "e", "l", "2", "0", "1", "5", "*", "*", "*"]}
+2018-08-13 21:09:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/element {"using": "css selector", "value": "[id=\"TANGRAM__PSP_4__submit\"]"}
+2018-08-13 21:09:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:09:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/element/eb67ce16-2036-3d49-8f42-9ae1b37f8367/click {"id": "eb67ce16-2036-3d49-8f42-9ae1b37f8367"}
+2018-08-13 21:09:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:10:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/source {}
+2018-08-13 21:10:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:10:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/cookie {}
+2018-08-13 21:10:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:10:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de/url {}
+2018-08-13 21:10:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:10:02 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:56716/session/6daf9ff8-0a44-214c-b519-096a9c3db4de {}
+2018-08-13 21:10:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:10:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baijiahao.baidu.com/builder/app/login> (referer: None)
+2018-08-13 21:10:02 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2018-08-13 21:10:02 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builderinner/api/content/app/userScore> (referer: http://baijiahao.baidu.com/builder/app/login)
+2018-08-13 21:10:02 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builderinner/api/content/app/userScore> (referer: http://baijiahao.baidu.com/builder/app/login)
+2018-08-13 21:10:02 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builderinner/api/content/app/userScore> (referer: http://baijiahao.baidu.com/?source=inner)
+2018-08-13 21:10:06 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builderinner/api/content/app/userScore> (referer: http://baijiahao.baidu.com/builder/app/login)
+2018-08-13 21:10:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builderinner/api/content/app/userScore> (referer: http://baijiahao.baidu.com/builder/app/login)
+2018-08-13 21:10:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baijiahao.baidu.com/builder/author/home/index> (referer: https://baijiahao.baidu.com/builderinner/api/content/app/userScore)
+2018-08-13 21:10:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/builder/author/home/index> (referer: https://baijiahao.baidu.com/builderinner/api/content/app/userScore)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/tv365/code/media_spider/media_spider/spiders/baijia_spider.py", line 73, in parse_index_pages_count_all
+    item['index_pages'][0]['data']['fanCount'] = int(dict_result['data']['coreData']['fansCount'])
+KeyError: 'data'
+2018-08-13 21:10:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baijiahao.baidu.com/builder/author/home/index> (referer: https://baijiahao.baidu.com/builderinner/api/content/app/userScore)
+2018-08-13 21:10:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/builder/author/home/index> (referer: https://baijiahao.baidu.com/builderinner/api/content/app/userScore)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/tv365/code/media_spider/media_spider/spiders/baijia_spider.py", line 73, in parse_index_pages_count_all
+    item['index_pages'][0]['data']['fanCount'] = int(dict_result['data']['coreData']['fansCount'])
+KeyError: 'data'
+2018-08-13 21:10:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baijiahao.baidu.com/builder/author/home/index> (referer: https://baijiahao.baidu.com/builderinner/api/content/app/userScore)
+2018-08-13 21:10:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baijiahao.baidu.com/builder/author/home/index> (referer: https://baijiahao.baidu.com/builderinner/api/content/app/userScore)
+2018-08-13 21:10:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baijiahao.baidu.com/builder/author/home/index> (referer: https://baijiahao.baidu.com/builderinner/api/content/app/userScore)
+2018-08-13 21:10:32 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/appStatistic> (referer: https://baijiahao.baidu.com/builder/author/home/index)
+2018-08-13 21:10:33 [scrapy.extensions.logstats] INFO: Crawled 16 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2018-08-13 21:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/appStatistic> (referer: https://baijiahao.baidu.com/builder/author/home/index)
+2018-08-13 21:10:37 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://baijiahao.baidu.com/builder/author/statistic/getFansBasicInfo?start=20180806&end=20180812&fans_type=new%2Csum&sort=asc&is_page=0&show_type=chart> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-08-13 21:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/appStatistic> (referer: https://baijiahao.baidu.com/builder/author/home/index)
+2018-08-13 21:10:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baijiahao.baidu.com/builder/author/statistic/getFansBasicInfo?start=20180806&end=20180812&fans_type=new%2Csum&sort=asc&is_page=0&show_type=chart> (referer: https://baijiahao.baidu.com/builder/author/statistic/appStatistic)
+2018-08-13 21:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baijiahao.baidu.com/builder/author/income/incomeBaseInfo?startDate=1533398400&endDate=1533916800&pageIndex=1&num=10&listType=0&is_export=0> (referer: https://baijiahao.baidu.com/builder/author/statistic/getFansBasicInfo?start=20180806&end=20180812&fans_type=new%2Csum&sort=asc&is_page=0&show_type=chart)
+2018-08-13 21:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=> (referer: https://baijiahao.baidu.com/builder/author/income/incomeBaseInfo?startDate=1533398400&endDate=1533916800&pageIndex=1&num=10&listType=0&is_export=0)
+2018-08-13 21:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:01 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:25 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=1&search=)
+2018-08-13 21:11:29 [root] INFO: spider account 13349936392 finished
+2018-08-13 21:11:29 [root] INFO: start write api
+2018-08-13 21:11:29 [root] INFO: income_pages pages lenth is 7
+2018-08-13 21:11:29 [root] INFO: return pages income_pages===>single_page is {'date': '20180813', 'data': {'platformId': 7, 'logtime': 20180805, 'income': 10.26, 'total': 10.26, 'accountId': 3, 'allowance': 0.0}}
+2018-08-13 21:11:29 [root] INFO: return pages income_pages===>single_page is {'date': '20180813', 'data': {'platformId': 7, 'logtime': 20180806, 'income': 9.21, 'total': 9.21, 'accountId': 3, 'allowance': 0.0}}
+2018-08-13 21:11:29 [root] INFO: return pages income_pages===>single_page is {'date': '20180813', 'data': {'platformId': 7, 'logtime': 20180807, 'income': 10.03, 'total': 10.03, 'accountId': 3, 'allowance': 0.0}}
+2018-08-13 21:11:29 [root] INFO: return pages income_pages===>single_page is {'date': '20180813', 'data': {'platformId': 7, 'logtime': 20180810, 'income': 579.83, 'total': 579.83, 'accountId': 3, 'allowance': 0.0}}
+2018-08-13 21:11:29 [root] INFO: return pages income_pages===>single_page is {'date': '20180813', 'data': {'platformId': 7, 'logtime': 20180809, 'income': 309.27, 'total': 309.27, 'accountId': 3, 'allowance': 0.0}}
+2018-08-13 21:11:29 [root] INFO: return pages income_pages===>single_page is {'date': '20180813', 'data': {'platformId': 7, 'logtime': 20180808, 'income': 240.27, 'total': 240.27, 'accountId': 3, 'allowance': 0.0}}
+2018-08-13 21:11:29 [root] INFO: return pages income_pages===>single_page is {'date': '20180813', 'data': {'platformId': 7, 'logtime': 20180811, 'income': 142.45, 'total': 142.45, 'accountId': 3, 'allowance': 0.0}}
+2018-08-13 21:11:29 [root] INFO: content_pages pages lenth is 10
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180813, 'data': {'readCount': 21, 'title': '\xe5\xa5\xb9\xe8\xb5\x84\xe6\xba\x90\xe5\xa0\xaa\xe6\xaf\x94\xe6\x99\xaf\xe7\x94\x9c\xef\xbc\x8c\xe9\xbb\x84\xe5\x9c\xa3\xe4\xbe\x9d\xe7\xbb\x99\xe5\xbd\x93\xe5\xa5\xb9\xe9\x85\x8d\xe8\xa7\x92\xef\xbc\x8c\xe8\x80\x81\xe7\x88\xb9\xe7\xa0\xb4\xe4\xba\xa7\xe5\x90\x8e\xe4\xbb\x8a\xe6\xb2\xa6\xe4\xb8\xba18\xe7\xba\xbf\xe6\xbc\x94\xe5\x91\x98\xef\xbc\x81', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}], 'pvCount': 243, 'readUser': -1, 'logtime': 20180813, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180813, 'data': {'readCount': 0, 'title': '\xe3\x80\x8a\xe5\xa4\xa9\xe5\xa4\xa9\xe5\x90\x91\xe4\xb8\x8a\xe3\x80\x8b\xe5\x8d\x81\xe5\x91\xa8\xe5\xb9\xb4\xe5\x85\x84\xe5\xbc\x9f\xe9\xbd\x90\xe8\x81\x9a\xef\xbc\x8c\xe6\x84\x9f\xe5\x8a\xa8\xe4\xbc\x97\xe4\xba\xba\xe6\xb3\xaa\xe6\xb4\x92\xe7\x8e\xb0\xe5\x9c\xba\xe4\xb8\xa8\xe8\xa1\xa8\xe6\x83\x85\xe5\x8c\x85', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}], 'pvCount': 44, 'readUser': -1, 'logtime': 20180813, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180813, 'data': {'readCount': 6, 'title': '\xe9\xbb\x84\xe6\xb8\xa4\xe4\xbc\x9a\xe5\x8f\x96\xe4\xbb\xa3\xe8\x91\x9b\xe4\xbc\x98\xef\xbc\x9f\xe4\xb8\xa4\xe4\xba\xba\xe5\x90\x8c\xe6\x98\xaf\xe9\x9b\xb6\xe5\xb7\xae\xe8\xaf\x84\xe5\xae\x9e\xe5\x8a\x9b\xe6\xb4\xbe\xef\xbc\x8c\xe9\xbb\x84\xe6\xb8\xa4\xe9\xab\x98\xe6\x83\x85\xe5\x95\x86\xe5\x9b\x9e\xe5\xba\x94\xe8\xae\xa9\xe4\xba\xba\xe7\xa7\xb0\xe8\xb5\x9e', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}], 'pvCount': 88, 'readUser': -1, 'logtime': 20180813, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180813, 'data': {'readCount': 11, 'title': '\xe5\xa5\xb922\xe5\xb2\x81\xe9\x80\x80\xe5\xad\xa6\xe6\x88\x90\xe5\xbd\xb1\xe5\x90\x8e\xef\xbc\x8c\xe6\x9b\xbe\xe6\x98\xaf\xe7\xab\xa0\xe5\xad\x90\xe6\x80\xa1\xe5\x90\x8c\xe5\xad\xa6\xef\xbc\x8c\xe5\xa6\x82\xe4\xbb\x8a\xe4\xb8\xba\xe5\x88\x98\xe6\x98\x8a\xe7\x84\xb6\xe5\x80\xaa\xe5\xa6\xae\xe4\xbd\x9c\xe9\x85\x8d\xef\xbc\x81', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}], 'pvCount': 694, 'readUser': -1, 'logtime': 20180813, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180813, 'data': {'readCount': 49, 'title': '\xe5\xa5\xb9\xe6\x9b\xbe\xe6\x98\xaf\xe8\xb0\xa2\xe5\xa8\x9c\xe6\x8e\xa5\xe7\x8f\xad\xe4\xba\xba\xef\xbc\x8c\xe5\x9b\xa0\xe8\x84\xbe\xe6\xb0\x94\xe5\xa4\xaa\xe5\xb7\xae\xe9\x81\xad\xe6\xb9\x96\xe5\x8d\x97\xe5\x8f\xb0\xe9\x9b\xaa\xe8\x97\x8f\xef\xbc\x8c\xe4\xbb\x8a\xe5\xa4\x8d\xe5\x87\xba\xe9\x81\xad\xe6\x97\xa0\xe8\xa7\x86\xef\xbc\x81', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}], 'pvCount': 308, 'readUser': -1, 'logtime': 20180813, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180813, 'data': {'readCount': 43, 'title': '\xe4\xbb\x96\xe6\x9b\xbe\xe6\x98\xaf\xe5\xbd\x93\xe7\xba\xa2\xe6\xbc\x94\xe5\x91\x98\xef\xbc\x8c\xe4\xb8\xba\xe6\xaf\x8d\xe6\xb2\xbb\xe7\x97\x85\xe4\xb8\x80\xe5\xb9\xb4\xe6\x8e\xa59\xe9\x83\xa8\xe6\x88\x8f\xef\xbc\x8c\xe8\x8e\xb7\xe5\xa8\xb1\xe4\xb9\x90\xe5\x9c\x88\xe2\x80\x9c\xe5\x8d\x81\xe5\xa4\xa7\xe5\xad\x9d\xe5\xad\x90\xe2\x80\x9d', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}], 'pvCount': 284, 'readUser': -1, 'logtime': 20180813, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180813, 'data': {'readCount': 2, 'title': '\xe7\xbc\x96\xe5\x89\xa7\xe5\xae\x9e\xe5\x90\x8d\xe4\xb8\xbe\xe6\x8a\xa5\xe3\x80\x8a\xe4\xb8\x80\xe5\x87\xba\xe5\xa5\xbd\xe6\x88\x8f\xe3\x80\x8b\xe6\x8a\x84\xe8\xa2\xad\xef\xbc\x8c\xe9\xbb\x84\xe6\xb8\xa4\xe5\xa4\x84\xe5\xa5\xb3\xe4\xbd\x9c\xe5\x8e\x9f\xe6\x9d\xa5\xe6\x98\xaf\xe5\x88\xab\xe4\xba\xba\xe7\x9a\x84\xe5\xbf\x83\xe8\xa1\x80\xef\xbc\x9f', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}], 'pvCount': 27, 'readUser': -1, 'logtime': 20180813, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180813, 'data': {'readCount': 2, 'title': '\xe6\x9d\xa8\xe7\xb4\xab\xe4\xb8\xba\xe6\x8b\x8d\xe3\x80\x8a\xe9\xa6\x99\xe8\x9c\x9c\xe3\x80\x8b\xe6\x9a\xb4\xe7\x98\xa618\xe6\x96\xa4\xef\xbc\x8c\xe7\xbd\x91\xe5\x8f\x8b\xef\xbc\x9a\xe6\x9e\x9c\xe7\x84\xb6\xe4\xbb\x99\xe5\xa5\xb3\xe4\xb8\x8d\xe6\x98\xaf\xe5\xa5\xbd\xe5\xbd\x93\xe7\x9a\x84', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}], 'pvCount': 67, 'readUser': -1, 'logtime': 20180813, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180813, 'data': {'readCount': 6, 'title': '\xe4\xbb\x9620\xe5\xb2\x81\xe5\x87\xba\xe6\xbc\x94\xe7\x9a\x87\xe5\xb8\x9d\xe6\x97\xa0\xe4\xba\xba\xe8\xaf\x86\xef\xbc\x8c\xe5\xa6\x82\xe4\xbb\x8a42\xe5\xb2\x81\xe5\x87\xba\xe6\xbc\x94\xe5\xa4\xaa\xe7\x9b\x91\xe5\x8d\xb4\xe7\xba\xa2\xe4\xba\x86\xef\xbc\x8c\xe8\x87\xb3\xe4\xbb\x8a\xe8\xbf\x98\xe5\x8d\x95\xe8\xba\xab\xef\xbc\x81', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}], 'pvCount': 14, 'readUser': -1, 'logtime': 20180813, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages content_pages===>single_page is {'date': 20180812, 'data': {'readCount': 10, 'title': '\xe3\x80\x8a\xe8\xa5\xbf\xe6\xb8\xb8\xe8\xae\xb0\xe3\x80\x8b\xe7\x9a\x84\xe5\x94\x90\xe5\x83\xa7\xe8\xa2\xab\xe4\xb8\xad\xe5\x9b\xbd\xe5\xa5\xb3\xe9\xa6\x96\xe5\xaf\x8c\xe5\x8c\x85\xe5\x85\xbb\xef\xbc\x8c\xe7\x9c\x8b\xe4\xba\x86\xe9\x99\x88\xe4\xb8\xbd\xe5\x8d\x8e\xe7\x9a\x84\xe7\x85\xa7\xe7\x89\x87\xef\xbc\x8c\xe5\xa4\xa7\xe5\xae\xb6\xe6\x87\x82\xe4\xba\x86', 'platformId': 7, 'likeCount': 0, 'commentCount': 0, 'dailies': [{'readCount': -1, 'likeCount': -1, 'commentCount': -1, 'pvCount': -1, 'logtime': 20180813, 'shareCount': -1, 'collectCount': -1}, {'readCount': 4, 'likeCount': 0, 'commentCount': 0, 'pvCount': 0, 'logtime': 20180812, 'shareCount': 0, 'collectCount': 0}], 'pvCount': 0, 'readUser': -1, 'logtime': 20180812, 'shareCount': 0, 'collectCount': 0, 'type': 1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: index_pages pages lenth is 1
+2018-08-13 21:11:29 [root] INFO: return pages index_pages===>single_page is {'date': '20180813', 'data': {'contentCount': -1, 'readCount': 987276, 'fanCount': 143, 'platformId': 7, 'likeCount': -1, 'commentCount': -1, 'dailies': [{'readCount': 28980, 'collectCount': 31, 'commentCount': 19, 'pvCount': 124414, 'logtime': 20180812, 'shareCount': 11, 'likeCount': 28}, {'readCount': 45248, 'collectCount': 58, 'commentCount': 61, 'pvCount': 267157, 'logtime': 20180811, 'shareCount': 59, 'likeCount': 39}, {'readCount': 154915, 'collectCount': 277, 'commentCount': 194, 'pvCount': 826794, 'logtime': 20180810, 'shareCount': 169, 'likeCount': 167}, {'readCount': 65673, 'collectCount': 113, 'commentCount': 83, 'pvCount': 406911, 'logtime': 20180809, 'shareCount': 39, 'likeCount': 82}, {'readCount': 370193, 'collectCount': 24, 'commentCount': 15, 'pvCount': 1400919, 'logtime': 20180808, 'shareCount': 2, 'likeCount': 31}, {'readCount': 5248, 'collectCount': 5, 'commentCount': 2, 'pvCount': 55814, 'logtime': 20180807, 'shareCount': 2, 'likeCount': 6}, {'readCount': 4126, 'collectCount': 7, 'commentCount': 6, 'pvCount': 37372, 'logtime': 20180806, 'shareCount': 2, 'likeCount': 5}], 'pvCount': -1, 'logtime': 20180812, 'income': -1.0, 'shareCount': -1, 'radia': 706, 'collectCount': -1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: user_pages pages lenth is 7
+2018-08-13 21:11:29 [root] INFO: return pages user_pages===>single_page is {'date': '20180813', 'data': {'totalCount': 51, 'platformId': 7, 'gdCount': 1, 'logtime': 20180806, 'loseCount': -1, 'getCount': -1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages user_pages===>single_page is {'date': '20180813', 'data': {'totalCount': 53, 'platformId': 7, 'gdCount': 2, 'logtime': 20180807, 'loseCount': -1, 'getCount': -1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages user_pages===>single_page is {'date': '20180813', 'data': {'totalCount': 64, 'platformId': 7, 'gdCount': 11, 'logtime': 20180808, 'loseCount': -1, 'getCount': -1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages user_pages===>single_page is {'date': '20180813', 'data': {'totalCount': 76, 'platformId': 7, 'gdCount': 12, 'logtime': 20180809, 'loseCount': -1, 'getCount': -1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages user_pages===>single_page is {'date': '20180813', 'data': {'totalCount': 112, 'platformId': 7, 'gdCount': 36, 'logtime': 20180810, 'loseCount': -1, 'getCount': -1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages user_pages===>single_page is {'date': '20180813', 'data': {'totalCount': 132, 'platformId': 7, 'gdCount': 20, 'logtime': 20180811, 'loseCount': -1, 'getCount': -1, 'accountId': 3}}
+2018-08-13 21:11:29 [root] INFO: return pages user_pages===>single_page is {'date': '20180813', 'data': {'totalCount': 139, 'platformId': 7, 'gdCount': 7, 'logtime': 20180812, 'loseCount': -1, 'getCount': -1, 'accountId': 3}}
+2018-08-13 21:11:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=>
+None
+2018-08-13 21:11:32 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:11:33 [scrapy.extensions.logstats] INFO: Crawled 33 pages (at 17 pages/min), scraped 1 items (at 1 items/min)
+2018-08-13 21:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:11:44 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:11:47 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:11:51 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:11:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:12:00 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:12:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://baijiahao.baidu.com/builder/author/statistic/articleDailyListStatistic> (referer: https://baijiahao.baidu.com/builder/article/lists?type=&collection=publish&pageSize=10&currentPage=2&search=)
+2018-08-13 21:12:08 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-08-13 21:12:08 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 30223,
+ 'downloader/request_count': 37,
+ 'downloader/request_method_count/GET': 9,
+ 'downloader/request_method_count/POST': 28,
+ 'downloader/response_bytes': 310326,
+ 'downloader/response_count': 42,
+ 'downloader/response_status_count/200': 42,
+ 'dupefilter/filtered': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 8, 13, 13, 12, 8, 507270),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 195,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 53,
+ 'memusage/max': 50421760,
+ 'memusage/startup': 45854720,
+ 'request_depth_max': 8,
+ 'response_received_count': 42,
+ 'scheduler/dequeued': 42,
+ 'scheduler/dequeued/memory': 42,
+ 'scheduler/enqueued': 42,
+ 'scheduler/enqueued/memory': 42,
+ 'spider_exceptions/KeyError': 2,
+ 'start_time': datetime.datetime(2018, 8, 13, 13, 7, 33, 261695)}
+2018-08-13 21:12:08 [scrapy.core.engine] INFO: Spider closed (finished)

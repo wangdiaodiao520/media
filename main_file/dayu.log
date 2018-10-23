@@ -1,0 +1,768 @@
+2018-08-13 21:36:40 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: media_spider)
+2018-08-13 21:36:40 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 2.7.10 (default, Oct  6 2017, 22:29:07) - [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.2.1, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-08-13 21:36:40 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'media_spider.spiders', 'SPIDER_MODULES': ['media_spider.spiders'], 'DOWNLOAD_DELAY': '1', 'BOT_NAME': 'media_spider'}
+2018-08-13 21:36:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-08-13 21:36:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'media_spider.middlewares.MediaSpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-13 21:36:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-13 21:36:40 [scrapy.middleware] INFO: Enabled item pipelines:
+['media_spider.pipelines.MediaSpiderPipeline']
+2018-08-13 21:36:40 [scrapy.core.engine] INFO: Spider opened
+2018-08-13 21:36:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-13 21:36:40 [dayu_spider] INFO: Spider opened: dayu_spider
+2018-08-13 21:36:40 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-08-13 21:36:40 [root] INFO: spider account wulanxin@17getfun.com start
+2018-08-13 21:36:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:36:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/url {"url": "https://mp.dayu.com/"}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element {"using": "css selector", "value": "iframe"}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/frame {"id": {"element-6066-11e4-a52e-4f735466cecf": "d4f1e4d8-14f9-b641-a173-ed93f42cdb1e", "ELEMENT": "d4f1e4d8-14f9-b641-a173-ed93f42cdb1e"}}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element {"using": "css selector", "value": "[id=\"login_name\"]"}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element/264ba446-325e-9b46-a20e-20b417e7659c/value {"text": "wulanxin@17getfun.com", "id": "264ba446-325e-9b46-a20e-20b417e7659c", "value": ["w", "u", "l", "a", "n", "x", "i", "n", "@", "1", "7", "g", "e", "t", "f", "u", "n", ".", "c", "o", "m"]}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element {"using": "css selector", "value": "[id=\"password\"]"}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element/1cb5ad29-b343-b044-85f4-f4d70107f58a/value {"text": "getfun666", "id": "1cb5ad29-b343-b044-85f4-f4d70107f58a", "value": ["g", "e", "t", "f", "u", "n", "6", "6", "6"]}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element {"using": "xpath", "value": "//span[@id='nc_1_n1z']"}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "09d535df-22c8-e94b-8142-056f0f7c229e"}}, {"duration": 0, "button": 0, "type": "pointerDown"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}, {"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 2, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 3, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 5, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 6, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 8, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 10, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 11, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 13, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 15, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 16, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 18, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 19, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 21, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 23, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 24, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 22, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 0, "button": 0, "type": "pointerUp"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element {"using": "xpath", "value": "//span[@class='nc-lang-cnt']"}
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element/a160976c-0805-cf42-bb20-d3fd144556c7/text {"id": "a160976c-0805-cf42-bb20-d3fd144556c7"}
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:58 [root] INFO: slider over success
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element {"using": "css selector", "value": "[id=\"submit_btn\"]"}
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/element/ef8c217c-5071-d74b-815e-c3fe7f08c662/click {"id": "ef8c217c-5071-d74b-815e-c3fe7f08c662"}
+2018-08-13 21:36:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/frame {"id": null}
+2018-08-13 21:36:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/cookie {}
+2018-08-13 21:36:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a/url {}
+2018-08-13 21:36:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:59 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:58064/session/e60ed46c-0083-5148-bc95-cbf43f1d142a {}
+2018-08-13 21:36:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:36:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/> (referer: None)
+2018-08-13 21:36:59 [root] INFO: spider account xunuo@17getfun.com start
+2018-08-13 21:37:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:37:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/url {"url": "https://mp.dayu.com/"}
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element {"using": "css selector", "value": "iframe"}
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/frame {"id": {"element-6066-11e4-a52e-4f735466cecf": "7322f3b6-c98a-a744-8407-25ab0d4e29ee", "ELEMENT": "7322f3b6-c98a-a744-8407-25ab0d4e29ee"}}
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element {"using": "css selector", "value": "[id=\"login_name\"]"}
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element/5b7d057f-4e01-a443-8003-3be81dc81482/value {"text": "xunuo@17getfun.com", "id": "5b7d057f-4e01-a443-8003-3be81dc81482", "value": ["x", "u", "n", "u", "o", "@", "1", "7", "g", "e", "t", "f", "u", "n", ".", "c", "o", "m"]}
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element {"using": "css selector", "value": "[id=\"password\"]"}
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element/487d7395-f875-944d-9934-3856ae7b376f/value {"text": "getfun666", "id": "487d7395-f875-944d-9934-3856ae7b376f", "value": ["g", "e", "t", "f", "u", "n", "6", "6", "6"]}
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element {"using": "xpath", "value": "//span[@id='nc_1_n1z']"}
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "37459281-f5ea-ae4a-90e7-168b4e26a928"}}, {"duration": 0, "button": 0, "type": "pointerDown"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}, {"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 2, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 3, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 5, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 6, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 8, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 10, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 11, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 13, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 15, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 16, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 18, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 19, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 21, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 23, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 24, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 22, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 0, "button": 0, "type": "pointerUp"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element {"using": "xpath", "value": "//span[@class='nc-lang-cnt']"}
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element/92130fd2-b01d-5c47-872e-cd5ed153de6f/text {"id": "92130fd2-b01d-5c47-872e-cd5ed153de6f"}
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [root] INFO: slider over success
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element {"using": "css selector", "value": "[id=\"submit_btn\"]"}
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/element/b6f68eaf-81d3-f947-a129-09574efdfc6f/click {"id": "b6f68eaf-81d3-f947-a129-09574efdfc6f"}
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/frame {"id": null}
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/cookie {}
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48/url {}
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:58221/session/b587d9e0-a882-df4c-ae2d-27ab467dec48 {}
+2018-08-13 21:37:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/> (referer: None)
+2018-08-13 21:37:15 [root] INFO: spider account maogt0128@163.com start
+2018-08-13 21:37:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:37:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/url {"url": "https://mp.dayu.com/"}
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element {"using": "css selector", "value": "iframe"}
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/frame {"id": {"element-6066-11e4-a52e-4f735466cecf": "77faafce-836a-1d4c-8787-a38de73a0dc5", "ELEMENT": "77faafce-836a-1d4c-8787-a38de73a0dc5"}}
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element {"using": "css selector", "value": "[id=\"login_name\"]"}
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element/4a84dd75-40ab-bf45-b0f7-a4449e8a7a6a/value {"text": "maogt0128@163.com", "id": "4a84dd75-40ab-bf45-b0f7-a4449e8a7a6a", "value": ["m", "a", "o", "g", "t", "0", "1", "2", "8", "@", "1", "6", "3", ".", "c", "o", "m"]}
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element {"using": "css selector", "value": "[id=\"password\"]"}
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element/7669946a-ec70-2c4c-8cb4-f572eacb5efb/value {"text": "mgt19920406", "id": "7669946a-ec70-2c4c-8cb4-f572eacb5efb", "value": ["m", "g", "t", "1", "9", "9", "2", "0", "4", "0", "6"]}
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element {"using": "xpath", "value": "//span[@id='nc_1_n1z']"}
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "d83da0f1-e859-654b-89e1-07fffa525569"}}, {"duration": 0, "button": 0, "type": "pointerDown"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}, {"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 2, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 3, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 5, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 6, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 8, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 10, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 11, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 13, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 15, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 16, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 18, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 19, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 21, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:31 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 23, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:31 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 24, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 22, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 0, "button": 0, "type": "pointerUp"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element {"using": "xpath", "value": "//span[@class='nc-lang-cnt']"}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element/0cf6005e-6a37-114c-8d3a-d032bb736e85/text {"id": "0cf6005e-6a37-114c-8d3a-d032bb736e85"}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [root] INFO: slider over success
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element {"using": "css selector", "value": "[id=\"submit_btn\"]"}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/element/c5489fd8-26e7-c14d-aab9-d556341a6097/click {"id": "c5489fd8-26e7-c14d-aab9-d556341a6097"}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/frame {"id": null}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/cookie {}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437/url {}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:58374/session/69162d5e-1128-d84f-86fc-3c65d7c09437 {}
+2018-08-13 21:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/> (referer: None)
+2018-08-13 21:37:32 [root] INFO: spider account haowenjie@17getfun.com start
+2018-08-13 21:37:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:37:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:36 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/url {"url": "https://mp.dayu.com/"}
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element {"using": "css selector", "value": "iframe"}
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/frame {"id": {"element-6066-11e4-a52e-4f735466cecf": "0084ca7a-0fd8-0447-a8ab-2b3f71746ecf", "ELEMENT": "0084ca7a-0fd8-0447-a8ab-2b3f71746ecf"}}
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element {"using": "css selector", "value": "[id=\"login_name\"]"}
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element/b2cd40e6-9f3b-e34b-8fde-7626cf3d6496/value {"text": "haowenjie@17getfun.com", "id": "b2cd40e6-9f3b-e34b-8fde-7626cf3d6496", "value": ["h", "a", "o", "w", "e", "n", "j", "i", "e", "@", "1", "7", "g", "e", "t", "f", "u", "n", ".", "c", "o", "m"]}
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element {"using": "css selector", "value": "[id=\"password\"]"}
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element/a0b46ac5-df55-bc48-aa56-7cf91ee723b7/value {"text": "getfun666", "id": "a0b46ac5-df55-bc48-aa56-7cf91ee723b7", "value": ["g", "e", "t", "f", "u", "n", "6", "6", "6"]}
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element {"using": "xpath", "value": "//span[@id='nc_1_n1z']"}
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "8a0ff18d-c95d-7342-b509-bef293c296c7"}}, {"duration": 0, "button": 0, "type": "pointerDown"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}, {"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 2, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 3, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 5, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 6, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 8, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 10, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 11, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:46 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 13, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:46 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 15, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:46 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 16, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:46 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 18, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 19, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 21, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 23, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 24, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 22, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 0, "button": 0, "type": "pointerUp"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element {"using": "xpath", "value": "//span[@class='nc-lang-cnt']"}
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element/42c4284d-0051-a244-8ba0-9cf535dadc4a/text {"id": "42c4284d-0051-a244-8ba0-9cf535dadc4a"}
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element/42c4284d-0051-a244-8ba0-9cf535dadc4a/text {"id": "42c4284d-0051-a244-8ba0-9cf535dadc4a"}
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element {"using": "xpath", "value": "//span[@id='nc_1_n1z']"}
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "8a0ff18d-c95d-7342-b509-bef293c296c7"}}, {"duration": 0, "button": 0, "type": "pointerDown"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}, {"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 2, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 3, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 5, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 6, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 8, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 10, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/middlewares_manager/download_middlewares.py", line 269, in move_to_gap
+    ActionChains(driver).move_by_offset(xoffset=x, yoffset=0).perform()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/common/action_chains.py", line 80, in perform
+    self.w3c_actions.perform()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/common/actions/action_builder.py", line 76, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+MoveTargetOutOfBoundsException: Message: (251, 119) is out of bounds of viewport width (246) and height (239)
+
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element {"using": "xpath", "value": "//span[@class='nc-lang-cnt']"}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element/1fc1f947-a408-a342-b8f6-2081aca098c2/text {"id": "1fc1f947-a408-a342-b8f6-2081aca098c2"}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [root] INFO: slider over success
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element {"using": "css selector", "value": "[id=\"submit_btn\"]"}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/element/7012377e-e9b9-d141-ab4b-4c3d82b95e0d/click {"id": "7012377e-e9b9-d141-ab4b-4c3d82b95e0d"}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/frame {"id": null}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/cookie {}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4/url {}
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:50 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:58517/session/76cb8f3d-9680-5b4a-991f-d4f2fc0eaab4 {}
+2018-08-13 21:37:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/> (referer: None)
+2018-08-13 21:37:51 [root] INFO: spider account yuluozhong@17getfun.com start
+2018-08-13 21:37:51 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-08-13 21:37:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:37:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:37:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/url {"url": "https://mp.dayu.com/"}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element {"using": "css selector", "value": "iframe"}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/frame {"id": {"element-6066-11e4-a52e-4f735466cecf": "9e3c0a93-f531-444e-9155-bd63abe00b56", "ELEMENT": "9e3c0a93-f531-444e-9155-bd63abe00b56"}}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element {"using": "css selector", "value": "[id=\"login_name\"]"}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element/ecb1bf8e-71ed-1544-a73c-25570b41629c/value {"text": "yuluozhong@17getfun.com", "id": "ecb1bf8e-71ed-1544-a73c-25570b41629c", "value": ["y", "u", "l", "u", "o", "z", "h", "o", "n", "g", "@", "1", "7", "g", "e", "t", "f", "u", "n", ".", "c", "o", "m"]}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element {"using": "css selector", "value": "[id=\"password\"]"}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element/72f0e965-6a66-b14b-bb18-ebfbca4278a2/value {"text": "getfun666", "id": "72f0e965-6a66-b14b-bb18-ebfbca4278a2", "value": ["g", "e", "t", "f", "u", "n", "6", "6", "6"]}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element {"using": "xpath", "value": "//span[@id='nc_1_n1z']"}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "c3b3ad02-2b21-4449-9331-a000de966e11"}}, {"duration": 0, "button": 0, "type": "pointerDown"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}, {"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 2, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:08 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 3, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:08 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 5, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:08 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 6, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:08 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 8, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 10, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 11, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 13, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 15, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 16, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 18, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 19, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 21, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 23, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 24, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 22, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 0, "button": 0, "type": "pointerUp"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element {"using": "xpath", "value": "//span[@class='nc-lang-cnt']"}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element/62bd44b1-5070-e542-9d62-5e404cac7141/text {"id": "62bd44b1-5070-e542-9d62-5e404cac7141"}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [root] INFO: slider over success
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element {"using": "css selector", "value": "[id=\"submit_btn\"]"}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/element/564df999-ea02-ff4a-baa1-0adb5fb31e00/click {"id": "564df999-ea02-ff4a-baa1-0adb5fb31e00"}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/frame {"id": null}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/cookie {}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1/url {}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:58683/session/65e20fc9-842e-6a40-9a40-0fb51b2358f1 {}
+2018-08-13 21:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/> (referer: None)
+2018-08-13 21:38:12 [root] INFO: spider account yiqijianada@qq.com start
+2018-08-13 21:38:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:38:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/url {"url": "https://mp.dayu.com/"}
+2018-08-13 21:38:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:22 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element {"using": "css selector", "value": "iframe"}
+2018-08-13 21:38:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:22 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/frame {"id": {"element-6066-11e4-a52e-4f735466cecf": "f2311e53-f07d-c44e-878a-ea10a587e361", "ELEMENT": "f2311e53-f07d-c44e-878a-ea10a587e361"}}
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element {"using": "css selector", "value": "[id=\"login_name\"]"}
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element/b2261011-9a08-794b-9e5c-7a04b91f5c8c/value {"text": "yiqijianada@qq.com", "id": "b2261011-9a08-794b-9e5c-7a04b91f5c8c", "value": ["y", "i", "q", "i", "j", "i", "a", "n", "a", "d", "a", "@", "q", "q", ".", "c", "o", "m"]}
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element {"using": "css selector", "value": "[id=\"password\"]"}
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element/4e9e8434-dbaa-a34a-a471-5627e0f53223/value {"text": "1haozhuanan", "id": "4e9e8434-dbaa-a34a-a471-5627e0f53223", "value": ["1", "h", "a", "o", "z", "h", "u", "a", "n", "a", "n"]}
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element {"using": "xpath", "value": "//span[@id='nc_1_n1z']"}
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "c1675357-ac14-1944-830e-600a7014ee10"}}, {"duration": 0, "button": 0, "type": "pointerDown"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}, {"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 2, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 3, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 5, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 6, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 8, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:25 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 10, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:25 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 11, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:25 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 13, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:25 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 15, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 16, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 18, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 19, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 21, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 23, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 24, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 22, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 0, "button": 0, "type": "pointerUp"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element {"using": "xpath", "value": "//span[@class='nc-lang-cnt']"}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element/6363205b-8013-ec44-ab61-c242c15016dc/text {"id": "6363205b-8013-ec44-ab61-c242c15016dc"}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [root] INFO: slider over success
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element {"using": "css selector", "value": "[id=\"submit_btn\"]"}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/element/2e596306-42dd-0542-9505-fb0e6e128226/click {"id": "2e596306-42dd-0542-9505-fb0e6e128226"}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/frame {"id": null}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/cookie {}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f/url {}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:58843/session/0a53ddd1-521a-f04a-b35d-c9d63f80e28f {}
+2018-08-13 21:38:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/> (referer: None)
+2018-08-13 21:38:28 [root] INFO: spider account vsmodellife@163.com start
+2018-08-13 21:38:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+2018-08-13 21:38:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:31 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/url {"url": "https://mp.dayu.com/"}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element {"using": "css selector", "value": "iframe"}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/frame {"id": {"element-6066-11e4-a52e-4f735466cecf": "12cce0e5-6148-7446-8f48-05e9d5ccf236", "ELEMENT": "12cce0e5-6148-7446-8f48-05e9d5ccf236"}}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element {"using": "css selector", "value": "[id=\"login_name\"]"}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element/c68868e2-f870-f948-9082-6f3cbeb8b106/value {"text": "vsmodellife@163.com", "id": "c68868e2-f870-f948-9082-6f3cbeb8b106", "value": ["v", "s", "m", "o", "d", "e", "l", "l", "i", "f", "e", "@", "1", "6", "3", ".", "c", "o", "m"]}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element {"using": "css selector", "value": "[id=\"password\"]"}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element/a0c5fcc7-bb2c-e54d-9a82-91585d71a545/value {"text": "VSmodel2015***", "id": "a0c5fcc7-bb2c-e54d-9a82-91585d71a545", "value": ["V", "S", "m", "o", "d", "e", "l", "2", "0", "1", "5", "*", "*", "*"]}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element {"using": "xpath", "value": "//span[@id='nc_1_n1z']"}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "98187107-fbd8-5a48-8c5b-32f112778988"}}, {"duration": 0, "button": 0, "type": "pointerDown"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}, {"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 0, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 2, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 3, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 5, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 6, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 8, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 10, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 11, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 13, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 15, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 16, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 18, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 19, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 21, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 23, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 24, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 250, "x": 22, "type": "pointerMove", "y": 0, "origin": "pointer"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/actions {"actions": [{"parameters": {"pointerType": "mouse"}, "type": "pointer", "id": "mouse", "actions": [{"duration": 0, "button": 0, "type": "pointerUp"}]}, {"type": "key", "id": "key", "actions": [{"duration": 0, "type": "pause"}]}]}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element {"using": "xpath", "value": "//span[@class='nc-lang-cnt']"}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element/2d0a0bb8-1701-0f46-985c-b3d74706ef8f/text {"id": "2d0a0bb8-1701-0f46-985c-b3d74706ef8f"}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [root] INFO: slider over success
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element {"using": "css selector", "value": "[id=\"submit_btn\"]"}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/element/0ee432ba-e12e-b449-8f75-7d95b8c7552d/click {"id": "0ee432ba-e12e-b449-8f75-7d95b8c7552d"}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/frame {"id": null}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/cookie {}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38/url {}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:58989/session/34917dda-ba08-a048-aa48-18d5b7ba3e38 {}
+2018-08-13 21:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-13 21:38:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/> (referer: None)
+2018-08-13 21:38:46 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2018-08-13 21:38:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+2018-08-13 21:38:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+2018-08-13 21:38:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+2018-08-13 21:38:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+2018-08-13 21:38:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 48, in parse_index_pages_radia
+    index_pages = [{'radia': dict_result['data'][0]['total_score']}]
+KeyError: 'data'
+2018-08-13 21:38:46 [root] ERROR: login failed or site templet is out-of-date, error info {"error":{"code":"LOGIN_EXPIRED","message":"登录过期，请刷新页面"}}
+2018-08-13 21:38:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 52, in parse_index_pages_radia
+    for each_index_page in index_pages:
+UnboundLocalError: local variable 'index_pages' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 48, in parse_index_pages_radia
+    index_pages = [{'radia': dict_result['data'][0]['total_score']}]
+KeyError: 'data'
+2018-08-13 21:38:46 [root] ERROR: login failed or site templet is out-of-date, error info {"error":{"code":"LOGIN_EXPIRED","message":"登录过期，请刷新页面"}}
+2018-08-13 21:38:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 52, in parse_index_pages_radia
+    for each_index_page in index_pages:
+UnboundLocalError: local variable 'index_pages' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 48, in parse_index_pages_radia
+    index_pages = [{'radia': dict_result['data'][0]['total_score']}]
+KeyError: 'data'
+2018-08-13 21:38:46 [root] ERROR: login failed or site templet is out-of-date, error info {"error":{"code":"LOGIN_EXPIRED","message":"登录过期，请刷新页面"}}
+2018-08-13 21:38:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 52, in parse_index_pages_radia
+    for each_index_page in index_pages:
+UnboundLocalError: local variable 'index_pages' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 48, in parse_index_pages_radia
+    index_pages = [{'radia': dict_result['data'][0]['total_score']}]
+KeyError: 'data'
+2018-08-13 21:38:46 [root] ERROR: login failed or site templet is out-of-date, error info {"error":{"code":"LOGIN_EXPIRED","message":"登录过期，请刷新页面"}}
+2018-08-13 21:38:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 52, in parse_index_pages_radia
+    for each_index_page in index_pages:
+UnboundLocalError: local variable 'index_pages' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 48, in parse_index_pages_radia
+    index_pages = [{'radia': dict_result['data'][0]['total_score']}]
+KeyError: 'data'
+2018-08-13 21:38:46 [root] ERROR: login failed or site templet is out-of-date, error info {"error":{"code":"LOGIN_EXPIRED","message":"登录过期，请刷新页面"}}
+2018-08-13 21:38:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 52, in parse_index_pages_radia
+    for each_index_page in index_pages:
+UnboundLocalError: local variable 'index_pages' referenced before assignment
+2018-08-13 21:38:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 48, in parse_index_pages_radia
+    index_pages = [{'radia': dict_result['data'][0]['total_score']}]
+KeyError: 'data'
+2018-08-13 21:38:47 [root] ERROR: login failed or site templet is out-of-date, error info {"error":{"code":"LOGIN_EXPIRED","message":"登录过期，请刷新页面"}}
+2018-08-13 21:38:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 52, in parse_index_pages_radia
+    for each_index_page in index_pages:
+UnboundLocalError: local variable 'index_pages' referenced before assignment
+2018-08-13 21:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 48, in parse_index_pages_radia
+    index_pages = [{'radia': dict_result['data'][0]['total_score']}]
+KeyError: 'data'
+2018-08-13 21:38:48 [root] ERROR: login failed or site templet is out-of-date, error info {"error":{"code":"LOGIN_EXPIRED","message":"登录过期，请刷新页面"}}
+2018-08-13 21:38:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://mp.dayu.com/dashboard/feature/star/starinfo?beginDate=20180811&endDate=20180812> (referer: https://mp.dayu.com/)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Python/2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/tv365/code/media_spider/media_spider/spiders/dayu_spider.py", line 52, in parse_index_pages_radia
+    for each_index_page in index_pages:
+UnboundLocalError: local variable 'index_pages' referenced before assignment
+2018-08-13 21:38:48 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-08-13 21:38:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3815,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 1974,
+ 'downloader/response_count': 14,
+ 'downloader/response_status_count/200': 14,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 8, 13, 13, 38, 48, 459504),
+ 'log_count/DEBUG': 543,
+ 'log_count/ERROR': 14,
+ 'log_count/INFO': 24,
+ 'memusage/max': 48119808,
+ 'memusage/startup': 45932544,
+ 'request_depth_max': 1,
+ 'response_received_count': 14,
+ 'scheduler/dequeued': 14,
+ 'scheduler/dequeued/memory': 14,
+ 'scheduler/enqueued': 14,
+ 'scheduler/enqueued/memory': 14,
+ 'spider_exceptions/UnboundLocalError': 7,
+ 'start_time': datetime.datetime(2018, 8, 13, 13, 36, 40, 507047)}
+2018-08-13 21:38:48 [scrapy.core.engine] INFO: Spider closed (finished)
